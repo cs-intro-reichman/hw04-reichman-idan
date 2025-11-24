@@ -35,7 +35,7 @@ public class MyString {
 
     // Handle empty substring
     if (str2.length() == 0) return true;
-
+    if (str2.length() > str1.length()) return false;
     char first = str2.charAt(0);
     int pos = str1.indexOf(first);
 
