@@ -46,6 +46,7 @@ public class MyString {
             if (str1.charAt(i) == str2.charAt(counter)) {
                 counter++;
             } else {
+                counter = 0;
                 break;
             }
             if (counter == str2.length()) {
