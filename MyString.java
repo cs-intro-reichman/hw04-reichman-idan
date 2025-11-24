@@ -30,10 +30,9 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-    str1 = lowerCase(str1);
-    str2 = lowerCase(str2);
+    //str1 = lowerCase(str1);
+    //str2 = lowerCase(str2);
 
-    // Handle empty substring
     if (str2.length() == 0) return true;
     if (str2.length() > str1.length()) return false;
     char first = str2.charAt(0);
