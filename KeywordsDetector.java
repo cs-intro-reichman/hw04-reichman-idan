@@ -27,8 +27,8 @@ public class KeywordsDetector {
        for (int i = 0; i< sentences.length; i++){
 
             for (int j = 0; j< keywords.length; j++){
-                keywords[j] = MyString.lowerCase(keywords[j]);
-            if (MyString.contains(MyString.lowerCase(sentences[i]), keywords[j])){
+                keywords[j] = lowerCase(keywords[j]);
+            if (contains(lowerCase(sentences[i]), keywords[j])){
                 System.out.println(sentences[i]);
                 break;
             }
